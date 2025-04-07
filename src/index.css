@@ -1,0 +1,111 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+
+
+/* Ajout de style pour les alertes */
+ul li {
+  padding: 20px; /* Ajouter du padding à l'intérieur de chaque élément d'alerte */
+  margin: 10px 0; /* Ajouter une marge au-dessus et en dessous des alertes */
+  border-radius: 8px; /* Ajouter des bords arrondis */
+  background-color: #fff; /* Fond blanc pour les alertes */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre discrète autour des alertes */
+  margin-left: 10px; /* Espacement de 10px à gauche */
+  margin-right: 10px; /* Espacement de 10px à droite */
+}
+
+/* Ajout d'un style pour la liste d'alertes */
+ul {
+  padding-left: 0; /* Retirer le padding par défaut sur la liste */
+  list-style: none; /* Supprimer les puces de liste */
+  margin-top: 20px; /* Espacement au-dessus de la liste des alertes */
+}
+
+a {
+  text-decoration: none;
+}
+
+input, select {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+/* Styles spécifiques au Header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7f7f7;
+  color: rgb(19, 5, 5);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: white;
+  font-size: 1rem;
+}
+
+header .search input {
+  padding: 0.5rem;
+  margin-top: 10px;
+  width: 200px;
+  border-radius: 5px;
+}
+
+footer {
+  background-color: #777;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+/* Ajout d'un style global pour aligner les éléments sur une même ligne avec un espacement */
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Espacement égal entre les éléments */
+  gap: 20px; /* Espacement entre chaque élément */
+}
+
+.container > div {
+  flex: 1; /* Chaque section occupe une largeur égale */
+}
+
+button {
+  cursor: pointer;
+  margin-top: 10px; /* Espacement entre les boutons et le reste du contenu */
+}
+
+button:hover {
+  background-color: #f0f0f0;
+}
