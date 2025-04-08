@@ -3,7 +3,9 @@ import { useTranslation } from "react-i18next"; // Pour la traduction
 import { Alerts } from "../Alerts/Alerts"; // Données simulées des alertes
 import DatePicker from "react-datepicker"; // Composant pour choisir les dates
 import "react-datepicker/dist/react-datepicker.css"; // Styles du DatePicker
-import Header from "../Header"; // Composant contenant les filtres (sujets + arrondissements)
+import Header from "../components/HEADER.JSX"; // Composant contenant les filtres (sujets + arrondissements)
+//import Header from "./../Components/Header";
+
 
 const HomePage = () => {
   const { t } = useTranslation(); // Fonction de traduction

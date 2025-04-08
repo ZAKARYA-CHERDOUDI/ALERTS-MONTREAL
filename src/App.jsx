@@ -2,7 +2,7 @@
 import React from "react"; // Import de React pour utiliser JSX
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; // Importation du Router et des composants nécessaires pour la gestion des routes
 import { AlertProvider } from "./context/AlertContext"; // Importation du provider AlertContext pour partager l'état des alertes à travers l'application
-import Layout from "./Layout/Layout"; // Importation du composant Layout qui contient la structure de base de l'application (header, footer, etc.)
+//import Layout from "./Layout/Layout"; // Importation du composant Layout qui contient la structure de base de l'application (header, footer, etc.)
 import Homepage from "./pages/HomePage"; // Importation de la page d'accueil
 import AlertPage from "./pages/AlertPage"; // Importation de la page de détails des alertes
 import NotFoundPage from "./pages/NotFoundPage"; // Importation de la page de 404 (page non trouvée)
@@ -21,7 +21,7 @@ function App() {
       {/* Router gère la navigation entre les différentes pages de l'application */}
       <Router>
         {/* Layout contient l'interface commune (comme le header et le footer) pour toutes les pages */}
-        <Layout>
+       
           {/* Définition des routes de l'application */}
           <Routes>
             {/* Route pour la page d'accueil */}
@@ -31,7 +31,7 @@ function App() {
             {/* Route pour afficher une page "Not Found" lorsque l'URL ne correspond à aucune route */}
             <Route path="*" element={<NotFoundPage />} />
           </Routes>
-        </Layout>
+       
       </Router>
     </AlertProvider>
   );
