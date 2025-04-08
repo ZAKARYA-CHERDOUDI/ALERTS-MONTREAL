@@ -4,9 +4,15 @@
       "account": "Mon Compte",
       "language": "Langue"
     },
+    "search": {
+      "placeholder": "Rechercher une alerte..."
+    },
     "homePage": {
       "alertsTitle": "Titre des alertes",
       "mainTitle": "Avis et Alertes de Montréal"
+    },
+    "footer": {
+      "text": "Ville de Montréal – Avis et alertes. Tous droits réservés."
     }
   }
   

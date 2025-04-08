@@ -1,94 +1,102 @@
-
+/* Global Styles */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f7f7;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  display: flex; /* Utilisation de Flexbox pour centrer le contenu */
+  justify-content: center; /* Centre le contenu horizontalement */
+  align-items: center; /* Centre le contenu verticalement */
+  background-color: #f7f7f7; /* Couleur de fond douce */
+  font-family: Arial, sans-serif; /* Police générale */
+  margin: 0; /* Supprime les marges par défaut du body */
+  padding: 0; /* Supprime les espacements par défaut du body */
 }
 
+/* Suppression des marges des titres */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 0; /* Réinitialise la marge pour tous les titres */
 }
 
-/* Styles for the Header */
+/* Styles pour l'en-tête (Header) */
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  color: rgb(19, 5, 5);
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex; /* Utilisation de Flexbox pour disposer les éléments */
+  justify-content: space-between; /* Espacement égal entre les éléments (logo et navigation) */
+  align-items: center; /* Centre verticalement les éléments */
+  background-color: #fff; /* Couleur de fond de l'en-tête */
+  color: rgb(19, 5, 5); /* Couleur du texte de l'en-tête */
+  padding: 1rem; /* Espacement interne de l'en-tête */
+  position: sticky; /* Rendre l'en-tête collant au sommet */
+  top: 0; /* Fixe l'en-tête en haut de la page */
+  z-index: 10; /* Assure que l'en-tête soit au-dessus du contenu */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère sous l'en-tête */
 }
 
+/* Styles du logo dans l'en-tête */
 header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #2e4b6f;
+  font-size: 1.5rem; /* Taille de police plus grande pour le logo */
+  font-weight: bold; /* Met en gras le texte du logo */
+  color: #2e4b6f; /* Couleur du texte du logo */
 }
 
+/* Styles pour la barre de recherche dans l'en-tête */
 header .search input {
-  padding: 0.5rem;
-  margin-top: 10px;
-  width: 250px;
-  border-radius: 5px;
+  padding: 0.5rem; /* Espacement interne du champ de recherche */
+  margin-top: 10px; /* Espace au-dessus du champ de recherche */
+  width: 250px; /* Largeur fixe pour le champ de recherche */
+  border-radius: 5px; /* Coins arrondis pour le champ de recherche */
 }
 
+/* Styles de la barre de navigation dans l'en-tête */
 header nav ul {
-  list-style: none;
-  padding: 0;
+  list-style: none; /* Enlève les puces des éléments de la liste */
+  padding: 0; /* Enlève les marges et padding de la liste */
 }
 
+/* Styles des éléments de la barre de navigation */
 header nav ul li {
-  display: inline;
-  margin-right: 20px;
+  display: inline; /* Affichage en ligne des éléments de la liste */
+  margin-right: 20px; /* Espacement entre les éléments */
 }
 
+/* Styles des liens de navigation */
 header nav ul li a {
-  color: #2e4b6f;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  color: #2e4b6f; /* Couleur des liens */
+  font-size: 1rem; /* Taille de la police des liens */
+  transition: color 0.3s ease; /* Animation de la couleur au survol */
 }
 
+/* Styles au survol des liens de navigation */
 header nav ul li a:hover {
-  color: #1270af;
+  color: #1270af; /* Couleur des liens au survol */
 }
 
+/* Styles pour le pied de page (Footer) */
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
+  background-color: #333; /* Couleur de fond sombre pour le pied de page */
+  color: white; /* Couleur du texte en blanc */
+  text-align: center; /* Centrer le texte */
+  padding: 2rem; /* Espacement interne du pied de page */
+  font-size: 0.9rem; /* Taille de police plus petite pour le pied de page */
 }
 
 /* Conteneur pour les filtres en ligne */
 .filter-container {
-  display: flex;
+  display: flex; /* Utilisation de Flexbox pour la disposition des filtres */
   justify-content: space-between; /* Espacement égal entre les filtres */
   gap: 20px; /* Espacement entre les éléments */
-  flex-wrap: wrap; /* Permet aux éléments de passer à la ligne sur les petits écrans */
-  margin-bottom: 20px; /* Espacement sous les filtres */
+  flex-wrap: wrap; /* Permet aux éléments de se réorganiser sur de petits écrans */
+  margin-bottom: 20px; /* Espacement sous le conteneur des filtres */
 }
 
-/* Style individuel pour chaque filtre */
+/* Style individuel pour chaque section de filtre */
 .filter-section {
-  flex: 1; /* Les sections prennent chacune la même largeur */
-  min-width: 200px; /* Largeur minimum pour chaque filtre */
-  background-color: #f9f9f9; /* Fond doux */
-  padding: 16px; /* Espacement interne */
-  border-radius: 8px; /* Coins arrondis */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  flex: 1; /* Chaque filtre prend la même largeur */
+  min-width: 200px; /* Largeur minimale pour chaque filtre */
+  background-color: #f9f9f9; /* Couleur de fond claire */
+  padding: 16px; /* Espacement interne de chaque filtre */
+  border-radius: 8px; /* Coins arrondis pour chaque section de filtre */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Ombre légère autour de chaque section de filtre */
 }
 
-/* Espacement pour le label de chaque filtre */
+/* Espacement du label dans chaque section de filtre */
 .filter-section .label {
-  font-weight: bold;
+  font-weight: bold; /* Met le texte en gras pour les labels */
   margin-bottom: 8px; /* Espacement sous le label */
 }

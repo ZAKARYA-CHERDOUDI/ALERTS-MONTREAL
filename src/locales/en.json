@@ -4,9 +4,16 @@
       "account": "My Account",
       "language": "Language"
     },
+    "search": {
+      "placeholder": "Search for an alert..."
+    },
     "homePage": {
       "alertsTitle": "Alerts Title",
       "mainTitle": "Montreal Notices and Alerts"
-    }
+    },
+    "footer": {
+    "text": "City of Montreal – Notices and Alerts. All rights reserved."
+  }
+    
   }
   

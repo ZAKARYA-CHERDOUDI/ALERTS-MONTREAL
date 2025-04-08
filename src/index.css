@@ -1,111 +1,119 @@
-
+/* Style général du body */
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f7f7;
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  display: flex; /* Utilisation du modèle Flexbox pour aligner les éléments */
+  justify-content: center; /* Centrer horizontalement les éléments */
+  align-items: center; /* Centrer verticalement les éléments */
+  background-color: #f7f7f7; /* Couleur de fond légère */
+  font-family: Arial, sans-serif; /* Police de caractères définie */
+  margin: 0; /* Suppression des marges par défaut */
+  padding: 0; /* Suppression des espacements par défaut */
 }
 
+/* Marges pour les titres (h1 à h6) */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+  margin: 0; /* Suppression des marges par défaut */
 }
 
-
-
-/* Ajout de style pour les alertes */
+/* Styles pour les alertes dans la liste */
 ul li {
-  padding: 20px; /* Ajouter du padding à l'intérieur de chaque élément d'alerte */
-  margin: 10px 0; /* Ajouter une marge au-dessus et en dessous des alertes */
-  border-radius: 8px; /* Ajouter des bords arrondis */
-  background-color: #fff; /* Fond blanc pour les alertes */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre discrète autour des alertes */
+  padding: 20px; /* Espacement intérieur des alertes */
+  margin: 10px 0; /* Espacement au-dessus et en dessous des alertes */
+  border-radius: 8px; /* Coins arrondis pour les alertes */
+  background-color: #fff; /* Fond blanc pour chaque alerte */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ombre légère autour des alertes */
   margin-left: 10px; /* Espacement de 10px à gauche */
   margin-right: 10px; /* Espacement de 10px à droite */
 }
 
-/* Ajout d'un style pour la liste d'alertes */
+/* Styles pour la liste d'alertes */
 ul {
-  padding-left: 0; /* Retirer le padding par défaut sur la liste */
-  list-style: none; /* Supprimer les puces de liste */
+  padding-left: 0; /* Retrait du padding par défaut */
+  list-style: none; /* Suppression des puces de la liste */
   margin-top: 20px; /* Espacement au-dessus de la liste des alertes */
 }
 
+/* Style pour les liens (suppression de la décoration par défaut) */
 a {
-  text-decoration: none;
+  text-decoration: none; /* Retirer la ligne de soulignement des liens */
 }
 
+/* Styles pour les champs de saisie (input, select) */
 input, select {
-  border: 1px solid #fff;
-  border-radius: 5px;
-  padding: 0.5rem;
+  border: 1px solid #fff; /* Bordure blanche pour les champs de saisie */
+  border-radius: 5px; /* Coins arrondis */
+  padding: 0.5rem; /* Espacement intérieur */
 }
 
-/* Styles spécifiques au Header */
+/* Styles pour le Header */
 header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #f7f7f7;
-  color: rgb(19, 5, 5);
-  padding: 1rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  display: flex; /* Flexbox pour organiser le contenu du header */
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Centrer les éléments verticalement */
+  background-color: #f7f7f7; /* Couleur de fond claire */
+  color: rgb(19, 5, 5); /* Couleur du texte */
+  padding: 1rem; /* Espacement autour du contenu */
+  position: sticky; /* Fixer le header en haut lors du défilement */
+  top: 0; /* Positionnement à partir du haut de la page */
+  z-index: 10; /* Assurer que le header reste au-dessus des autres éléments */
 }
 
+/* Style pour le logo dans le header */
 header .logo {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: 1.5rem; /* Taille de police plus grande pour le logo */
+  font-weight: bold; /* Mettre le logo en gras */
 }
 
+/* Styles pour les éléments de navigation dans le header */
 header nav ul {
-  list-style: none;
-  padding: 0;
+  list-style: none; /* Suppression des puces de la liste de navigation */
+  padding: 0; /* Retrait du padding */
 }
 
 header nav ul li {
-  display: inline;
-  margin-right: 20px;
+  display: inline; /* Affichage en ligne pour les éléments de la liste */
+  margin-right: 20px; /* Espacement à droite de chaque élément */
 }
 
 header nav ul li a {
-  color: white;
-  font-size: 1rem;
+  color: white; /* Couleur du texte des liens */
+  font-size: 1rem; /* Taille de police de taille standard pour les liens */
 }
 
+/* Style pour le champ de recherche dans le header */
 header .search input {
-  padding: 0.5rem;
-  margin-top: 10px;
-  width: 200px;
-  border-radius: 5px;
+  padding: 0.5rem; /* Espacement intérieur */
+  margin-top: 10px; /* Espacement au-dessus du champ de recherche */
+  width: 200px; /* Largeur du champ de recherche */
+  border-radius: 5px; /* Coins arrondis pour le champ */
 }
 
+/* Styles pour le footer */
 footer {
-  background-color: #777;
-  color: white;
-  text-align: center;
-  padding: 1rem;
+  background-color: #777; /* Couleur de fond pour le footer */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centrer le texte */
+  padding: 1rem; /* Espacement autour du texte */
 }
-/* Ajout d'un style global pour aligner les éléments sur une même ligne avec un espacement */
 
+/* Styles pour un conteneur flexible */
 .container {
-  display: flex;
+  display: flex; /* Flexbox pour la disposition des éléments */
   justify-content: space-between; /* Espacement égal entre les éléments */
   gap: 20px; /* Espacement entre chaque élément */
 }
 
+/* Chaque div dans le conteneur prend une largeur égale */
 .container > div {
   flex: 1; /* Chaque section occupe une largeur égale */
 }
 
+/* Styles pour les boutons */
 button {
-  cursor: pointer;
-  margin-top: 10px; /* Espacement entre les boutons et le reste du contenu */
+  cursor: pointer; /* Modifier le curseur lorsqu'il survole un bouton */
+  margin-top: 10px; /* Espacement au-dessus du bouton */
 }
 
+/* Style de survol des boutons */
 button:hover {
-  background-color: #f0f0f0;
+  background-color: #f0f0f0; /* Changer la couleur de fond lorsqu'on survole */
 }
